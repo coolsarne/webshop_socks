@@ -7,4 +7,7 @@ M1 - 1ste commit - Voorbereiden van milestone 1
 M1 - 2e commit - M1 in orde
 
 ## 19 Feb 2021
-M2 - 1ste commit - Tekenen van wireframes in Lucidchart (M2 in orde)
+M2 - 1ste commit - Tekenen eerste versie van wireframes in Lucidchart 
+
+## 20 Feb 2021
+M2 - 2e commit - Tekenen tweede versie van wireframes in Lucidchart (M2 in orde)
