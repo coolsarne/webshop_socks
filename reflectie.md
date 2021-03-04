@@ -15,3 +15,6 @@ M2 - 3e commit - Tekenen derde versie van wireframes in Lucidchart na feedback v
 
 ## 25 Feb 2021
 M3 - 1ste commit - html files aangemaakt voor alle pagina's
+
+## 4 Maart 2021
+M3 - 2e commit - homepagina afgemaakt (eerste versie)
