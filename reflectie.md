@@ -18,3 +18,6 @@ M3 - 1ste commit - html files aangemaakt voor alle pagina's
 
 ## 4 Maart 2021
 M3 - 2e commit - homepagina afgemaakt (eerste versie)
+
+## 5 Maart 2021
+M3 - 3e commit - homepage aangepast na validatie, FAQ en Contactpagina afgewerkt (eerste versie) 
