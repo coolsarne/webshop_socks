@@ -21,3 +21,6 @@ M3 - 2e commit - homepagina afgemaakt (eerste versie)
 
 ## 5 Maart 2021
 M3 - 3e commit - homepage aangepast na validatie, FAQ en Contactpagina afgewerkt (eerste versie) 
+
+## 7 Maart 2021
+M3 - 4e commit - Productpagina afgewerkt + productspecificatie van 1 product, om makkelijker aan te kunnen passen na validatie
