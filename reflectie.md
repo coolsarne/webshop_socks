@@ -30,3 +30,4 @@ M3 - 4e commit - feedback validators verwerkt en alle andere productpaginas afge
 
 ## 8 Maart 2021
 M3 - 5e commit - kleine aanpassing in index.html file (M3 in orde)
+M4 - 1e commit - Gechecked of outline volledig in orde is (M4 in orde)
