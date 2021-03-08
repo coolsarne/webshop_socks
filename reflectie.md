@@ -26,4 +26,7 @@ M3 - 3e commit - homepage aangepast na validatie, FAQ en Contactpagina afgewerkt
 M3 - 4e commit - Productpagina afgewerkt + productspecificatie van 1 product, om makkelijker aan te kunnen passen na validatie
 
 ## 7 Maart 2021
-M3 - 4e commit - feedback validators verwerkt en alle andere productpaginas afgewerkt (M3 in orde)
+M3 - 4e commit - feedback validators verwerkt en alle andere productpaginas afgewerkt
+
+## 8 Maart 2021
+M3 - 5e commit - kleine aanpassing in index.html file (M3 in orde)
