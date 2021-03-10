@@ -29,5 +29,8 @@ M3 - 4e commit - Productpagina afgewerkt + productspecificatie van 1 product, om
 M3 - 4e commit - feedback validators verwerkt en alle andere productpaginas afgewerkt
 
 ## 8 Maart 2021
-M3 - 5e commit - kleine aanpassing in index.html file (M3 in orde)
+M3 - 5e commit - kleine aanpassing in index.html file
 M4 - 1e commit - Gechecked of outline volledig in orde is (M4 in orde)
+
+## 10 Maart 2021
+M3 - 6e commit - kleine aanpassing in index.html file (M3 in orde)
