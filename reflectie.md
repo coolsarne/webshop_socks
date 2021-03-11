@@ -36,3 +36,6 @@ M4 - 1e commit - Gechecked of outline volledig in orde is (M4 in orde)
 M3 - 6e commit - kleine aanpassing in index.html file (M3 in orde)
 M5 - 1e commit - Eerste beetje css toegepast, om navigation bar al een beetje te stylen 
 M5 - 2e commit - Deftige versie navigation bear + banner gefixt (enkel toegepast op index.html en contact.html)
+
+## 11 Maart 2021
+Groeiproject: index.html file aangemaakt 
