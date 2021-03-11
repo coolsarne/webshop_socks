@@ -57,9 +57,9 @@ h1 {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 500%;
+    font-size: 5vw;
     color: white;
-    text-shadow: 4px 4px green;
+    text-shadow: 0.2vw 0.2vw green;
 }
 
 .banner {
