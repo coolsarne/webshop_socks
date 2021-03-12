@@ -52,3 +52,6 @@ Groeiproject: index.html file aangemaakt
 M3 - 7e commit - Verwerken feedback M3: speciale tekens vervangen, niet-informatieve producten niet meer aanklikbaar gemaakt, meer variatie met <small>, <address> en <legend> tags, kenmerken product in <section> geplaatst ipv <aside>
 M4 - (commit samen met M3 - 7e commit) - Verwerken feedback M4: Untitled element in personalisering pagina weggehaald, niveau headings gefixt in productpagina (filterbox <h3> vervangen door <legend>) 
 M5 - 2e commit - Navigation bar + banner toegepast op elke pagina
+
+## 12 Maart 2021
+M4 - 8e commit - Verwerken 2e keer feedback M4: alle <li> tags van een <section> voorzien zodat headings goed staan
