@@ -55,3 +55,6 @@ M5 - 2e commit - Navigation bar + banner toegepast op elke pagina
 
 ## 12 Maart 2021
 M4 - 8e commit - Verwerken 2e keer feedback M4: alle <li> tags van een <section> voorzien zodat headings goed staan
+
+## 18 Maart 2021
+M5 - 3e commit - Navigation bar + banner afgewerkt

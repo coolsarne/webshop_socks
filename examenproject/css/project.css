@@ -6,7 +6,6 @@ body {
 
 header {
     position: relative;
-    text-align: center;
 }
 
 .hiddentitle {
@@ -18,38 +17,71 @@ header {
 }
 
 /*Begin styling navigatie bar*/
-nav {
-    margin: 15px;
+.navbar a:link,.navbar a:visited{
+    text-decoration: none;
+    color: inherit;
 }
 
 nav .logo {
     position: absolute;
     left: 10px;
-    top: -6px;
+    top: 0;
 }
 
-nav ul {
-    list-style: none;
+.navbar {
+    text-align: center;
+}
+
+.navbar ul {
+    font-size: 18px;
     padding: 4px 0;
-    margin: 0;
+    margin: 8px;
+
 }
 
-nav li {
+.navbar ul li {
     display: inline;
-    padding: 4px;
+    padding: 10px 50px;
 }
 
-nav ul li ul {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: all 0.5s ease;
-    margin-top: 1rem;
-    display: none;
+.navbar ul li:hover {
+    background-color: #caeeca;
+    border-radius: 5px;
+}
+
+.navbar .active {
+    background-color: lightgreen;
+    border-radius: 5px;
+}
+
+/* Submenu items */
+.navbar .submenu {
+    position: relative;
+    display: inline-block;
+
+}
+.navbar .submenu ul {
+    display:none;
+    background-color: #caeeca;
+    position:absolute;
+}
+
+.navbar .submenu ul li {
+    width: 4em;
+    display: block;
+    text-decoration: inherit;
+}
+
+
+/* Weergeven submenu */
+.navbar ul li:hover ul {
+    display: block;
+}
+.navbar .submenu ul li:hover{
+    background-color: #9be09b;
 }
 /*Einde styling navigatie bar*/
+
 
 /*Begin styling banner + paginatitel*/
 h1 {
@@ -64,6 +96,7 @@ h1 {
 
 .banner {
     width: 100%;
+    max-height: 344px;
 }
 /*Einde styling banner + paginatitel*/
 

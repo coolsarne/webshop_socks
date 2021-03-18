@@ -24,14 +24,14 @@
     <h1>Producten</h1>
 
     <!-- navigation bar -->
-    <nav>
+    <nav class="navbar">
         <h2 class="hiddentitle">Navigatie</h2>
         <img src="../media/supersockslogo_small.webp" alt="Website logo" class="logo">
         <ul>
             <li><a href="../index.html">Home</a></li>
-            <li>Producten</li>
-            <li>
-                <a href="personalisering.html">Personalisering</a>
+            <li class="active">Producten</li>
+            <li class="submenu">
+                <a href="../html/personalisering.html">Personalisering &#9660;</a>
                 <ul>
                     <li><a href="personalisering.html">Tekst</a></li>
                     <li><a href="personalisering.html">Afbeelding</a></li>
@@ -55,35 +55,15 @@
 
         <form>
             <fieldset>
-                <legend>Kleur</legend>
-                <input type="checkbox" id="kleur1" value="zwart">
-                <label for="kleur1">Zwart</label>
-                <input type="checkbox" id="kleur2" value="wit">
-                <label for="kleur2">Wit</label>
-                <input type="checkbox" id="kleur3" value="multi">
-                <label for="kleur3">Multikleur</label>
-                <input type="checkbox" id="kleur4" value="andere">
-                <label for="kleur4">Andere</label>
-            </fieldset>
-            <fieldset>
                 <legend>Patroon</legend>
-                <input type="checkbox" id="patroon1" value="geen">
+                <input type="radio" id="patroon1" value="geen">
                 <label for="patroon1">Geen</label>
-                <input type="checkbox" id="patroon2" value="bolletjes">
+                <input type="radio" id="patroon2" value="bolletjes">
                 <label for="patroon2">Bolletjes</label>
-                <input type="checkbox" id="patroon3" value="streepjes">
+                <input type="radio" id="patroon3" value="streepjes">
                 <label for="patroon3">Streepjes</label>
-                <input type="checkbox" id="patroon4" value="geruit">
+                <input type="radio" id="patroon4" value="geruit">
                 <label for="patroon4">Geruit</label>
-            </fieldset>
-            <fieldset>
-                <legend>Maat</legend>
-                <input type="checkbox" id="maat1" value="32-36">
-                <label for="maat1">32 - 37</label>
-                <input type="checkbox" id="maat2" value="37-42">
-                <label for="maat2">37 - 42</label>
-                <input type="checkbox" id="maat3" value="43-48">
-                <label for="maat3">43 - 48</label>
             </fieldset>
         </form>
     </aside>
