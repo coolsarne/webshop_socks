@@ -100,6 +100,38 @@ h1 {
 }
 /*Einde styling banner + paginatitel*/
 
+/*Begin filters werken*/
+#patroon1:checked ~ section .filteralles{
+    display: none;
+}
+#patroon2:checked ~ section .filteralles{
+    display: none;
+}
+#patroon3:checked ~ section .filteralles{
+    display: none;
+}
+#patroon4:checked ~ section .filteralles{
+    display: none;
+}
+
+
+
+#patroon1:checked ~ section .filtergeen{
+    display: list-item;
+}
+#patroon2:checked ~ section .filterbolletjes{
+    display: list-item;
+}
+#patroon3:checked ~ section .filtergestreept{
+    display: list-item;
+}
+#patroon4:checked ~ section .filtergeruit{
+    display: list-item;
+}
+
+
+/*einde filters werken*/
+
 /*Begin styling map in contactpagina*/
 .map {
     width: 640px;
