@@ -64,3 +64,6 @@ M5 - 4e commit - werking filters gefixt
 
 ## 23 Maart 2021
 M5 - 5e commit - grid toegepast op alle paginas (M5_v1)
+
+## 24 Maart 2021
+M5 - 6e commit - verbeteringen finale versie M5, (M5_v2)

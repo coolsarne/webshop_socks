@@ -114,47 +114,6 @@ h1 {
 
 /*Einde styling banner + paginatitel*/
 
-/*Begin filters werken*/
-
-/*eerst bij klik alles verbergen*/
-#filtergeen:checked ~ section .filteralles {
-    display: none;
-}
-
-#filterbolletjes:checked ~ section .filteralles {
-    display: none;
-}
-
-#filterstreepjes:checked ~ section .filteralles {
-    display: none;
-}
-
-#filtergeruit:checked ~ section .filteralles {
-    display: none;
-}
-
-/*vervolgens het gewenste item tonen*/
-#filteralles:checked ~ section .filteralles {
-    display: inline-block;
-}
-
-#filtergeen:checked ~ section .filtergeen {
-    display: inline-block;
-}
-
-#filterbolletjes:checked ~ section .filterbolletjes {
-    display: inline-block;
-}
-
-#filterstreepjes:checked ~ section .filtergestreept {
-    display: inline-block;
-}
-
-#filtergeruit:checked ~ section .filtergeruit {
-    display: inline-block;
-}
-
-/*einde filters werken*/
 
 /*Begin algemene styling*/
 
@@ -196,7 +155,6 @@ ul {
     grid-gap: 10px;
 
     grid-template-areas:
-    "over_ons ons_aanbod personalisering"
     "over_ons ons_aanbod personalisering";
 }
 
@@ -237,16 +195,12 @@ ul {
 #producten_main {
     grid-area: main;
     display: grid;
-    grid-template-columns: 0.3fr 3fr;
     gap: 10px;
     text-align: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
-    "filtertitel producten"
-    "gridfilter1 producten"
-    "gridfilter2 producten"
-    "gridfilter3 producten"
-    "gridfilter4 producten"
-    "gridfilter5 producten";
+    "gridfilter1 gridfilter2 gridfilter3 gridfilter4 gridfilter5"
+    "producten producten producten producten producten";
 }
 
 #producten {
@@ -314,14 +268,9 @@ ul {
 
 }
 
-input[type="radio"]{
-    position: absolute;
-    left: -10000px;
-
-}
-
-#filtertitel {
-    grid-area: filtertitel;
+#producten_main label {
+    transform: translate(35%,0);
+    margin: 20px;
 }
 
 #gridfilter1 {
@@ -336,6 +285,7 @@ input[type="radio"]{
 
 #gridfilter3 {
     grid-area: gridfilter3;
+
 
 }
 #gridfilter4 {
@@ -352,10 +302,12 @@ input[type="radio"]{
 #contact_main {
     grid-area: main;
     display: grid;
-    grid-template-columns: 1fr 1fr 5fr;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 2fr;
     gap: 10px;
     grid-template-areas:
-    "email bellen bezoek";
+    "bellen bezoek"
+    "email bezoek";
     text-align: center;
 }
 
@@ -409,24 +361,18 @@ input[type="radio"]{
 .proddetail_main {
     grid-area: main;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
     gap: 10px;
     grid-template-areas:
-    "detail_titel detail_titel"
-    "foto kenmerken";
+    "algemeen kenmerken";
 }
 
-.detail_titel {
-    grid-area: detail_titel;
+.algemeen {
+    grid-area: algemeen;
     background-color: #caeeca;
     border-radius: 10px;
-}
-
-.foto {
-    grid-area: foto;
-    background-color: #caeeca;
-    border-radius: 10px;
-    padding: 10px;
+    text-align: center;
+    padding: 0 20px 20px;
 }
 
 .kenmerken {
@@ -434,4 +380,81 @@ input[type="radio"]{
     background-color: #caeeca;
     border-radius: 10px;
     padding: 10px;
+    font-weight: bold;
 }
+
+.kenmerken dt {
+    padding-top: 50px;
+}
+
+.kenmerken dd {
+    padding-top: 10px;
+    font-weight: normal;
+}
+/*einde grid product details*/
+
+/*Begin filters werken*/
+
+/*eerst bij klik alles verbergen*/
+#filtergeen:checked ~ section .filteralles {
+    display: none;
+}
+
+#filterbolletjes:checked ~ section .filteralles {
+    display: none;
+}
+
+#filterstreepjes:checked ~ section .filteralles {
+    display: none;
+}
+
+#filtergeruit:checked ~ section .filteralles {
+    display: none;
+}
+
+/*vervolgens het gewenste item tonen*/
+#filteralles:checked ~ section .filteralles {
+    display: inline-block;
+}
+
+#filtergeen:checked ~ section .filtergeen {
+    display: inline-block;
+}
+
+#filterbolletjes:checked ~ section .filterbolletjes {
+    display: inline-block;
+}
+
+#filterstreepjes:checked ~ section .filtergestreept {
+    display: inline-block;
+}
+
+#filtergeruit:checked ~ section .filtergeruit {
+    display: inline-block;
+}
+
+/*einde filters werken*/
+
+/*begin styling filters*/
+input[type="radio"]{
+    position: absolute;
+    left: -10000px;
+
+}
+
+#producten_main label {
+    border: 3px solid darkgreen;
+    border-radius: 10px;
+    height: 20px;
+    width: 100px;
+    padding: 3px;
+}
+#producten_main input[type="radio"]:checked+label {
+    background-color: #90ee90;
+}
+
+#producten_main label:hover {
+    background-color: #caeeca;
+}
+
+/*einde styling filters*/
