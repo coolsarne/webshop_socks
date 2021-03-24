@@ -18,19 +18,20 @@
 
 </head>
 <body>
+
 <header>
     <!-- titel pagina -->
     <h1>Productinfo</h1>
 
     <!-- navigation bar -->
-    <nav>
+    <nav class="navbar">
         <h2 class="hiddentitle">Navigatie</h2>
         <img src="../../media/supersockslogo_small.webp" alt="Website logo" class="logo">
         <ul>
             <li><a href="../../index.html">Home</a></li>
             <li><a href="../product.html">Producten</a></li>
-            <li>
-                <a href="../personalisering.html">Personalisering</a>
+            <li class="submenu">
+                <a href="../../html/personalisering.html">Personalisering &#9660;</a>
                 <ul>
                     <li><a href="../personalisering.html">Tekst</a></li>
                     <li><a href="../personalisering.html">Afbeelding</a></li>
@@ -43,45 +44,46 @@
 
     <!-- banner -->
     <img src="../../media/supersocksbanner.webp" alt="Website banner" class="banner"/>
-
 </header>
 
-<main>
+<main class="proddetail_main">
 
     <!-- beschrijving product + grote foto -->
-    <section>
+    <section class="detail_titel">
         <h2>Loopsokken</h2>
         <p>Deze loopsokken zijn ontworpen om tijdens een loopactiviteit optimaal comfort te kunnen garanderen. Ze zijn
             geschikt voor zowel korte en lange afstanden. De microscopisch kleine gaatjes in het textiel zorgt voor het
             voorkomen van zweetvoeten, zodat u ook daarvan geen last van zal hebben. </p>
-        <img src="../../media/producten/vergroot/sport/sportgroot1.png" alt="sportsokken_1">
-        <!-- bijkomende informatie -->
-        <section>
-
-            <h3>Kenmerken</h3>
-
-            <dl>
-                <dt>Kleur</dt>
-                <dd>Wit en grijs</dd>
-                <dt>Patroon</dt>
-                <dd>Geen patroon</dd>
-                <dt>Beschikbaar in maten</dt>
-                <dd>37 - 42</dd>
-                <dd>43 - 48</dd>
-                <dt>Ideaal voor</dt>
-                <dd>Hardlopen</dd>
-            </dl>
-        </section>
     </section>
+    <img src="../../media/producten/vergroot/sport/sportgroot1.png" alt="sportsokken_1" class="foto">
+
+    <!-- bijkomende informatie -->
+    <section class="kenmerken">
+
+        <h3>Kenmerken</h3>
+
+        <dl>
+            <dt>Kleur</dt>
+            <dd>Wit en grijs</dd>
+            <dt>Patroon</dt>
+            <dd>Geen patroon</dd>
+            <dt>Beschikbaar in maten</dt>
+            <dd>37 - 42</dd>
+            <dd>43 - 48</dd>
+            <dt>Ideaal voor</dt>
+            <dd>Hardlopen</dd>
+        </dl>
+    </section>
+
 
 </main>
 
 <!-- Footer -->
-<footer>
+<footer id="footer">
 
     <section>
 
-        <h2>Footer</h2>
+        <h2 class="hiddentitle">Footer</h2>
 
         <section>
             <h3>Vind ons op</h3>

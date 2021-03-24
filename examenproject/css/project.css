@@ -1,23 +1,31 @@
+/*begin algemene grid*/
 body {
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
     background-color: white;
     font-family: Arial, sans-serif;
     color: #323232;
 }
 
-header {
-    position: relative;
+#footer {
+    display: grid;
+    grid-area: footer;
+    text-align: center;
 }
 
-.hiddentitle {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    left: -10000px;
-}
+/*einde algemene grid*/
 
 /*Begin styling navigatie bar*/
-.navbar a:link,.navbar a:visited{
+.navbar {
+    grid-area: navigatie;
+    text-align: center;
+}
+
+.navbar a:link, .navbar a:visited {
     text-decoration: none;
     color: inherit;
 }
@@ -26,10 +34,6 @@ nav .logo {
     position: absolute;
     left: 10px;
     top: 0;
-}
-
-.navbar {
-    text-align: center;
 }
 
 .navbar ul {
@@ -50,7 +54,7 @@ nav .logo {
 }
 
 .navbar .active {
-    background-color: lightgreen;
+    background-color: #90ee90;
     border-radius: 5px;
 }
 
@@ -60,10 +64,11 @@ nav .logo {
     display: inline-block;
 
 }
+
 .navbar .submenu ul {
-    display:none;
+    display: none;
     background-color: #caeeca;
-    position:absolute;
+    position: absolute;
 }
 
 .navbar .submenu ul li {
@@ -77,14 +82,21 @@ nav .logo {
 .navbar ul li:hover ul {
     display: block;
 }
-.navbar .submenu ul li:hover{
+
+.navbar .submenu ul li:hover {
     background-color: #9be09b;
 }
+
 /*Einde styling navigatie bar*/
 
 
 /*Begin styling banner + paginatitel*/
+header {
+    position: relative;
+}
+
 h1 {
+    grid-area: titel;
     position: absolute;
     top: 40%;
     left: 50%;
@@ -95,50 +107,331 @@ h1 {
 }
 
 .banner {
+    grid-area: banner;
     width: 100%;
     max-height: 344px;
 }
+
 /*Einde styling banner + paginatitel*/
 
 /*Begin filters werken*/
-#patroon1:checked ~ section .filteralles{
-    display: none;
-}
-#patroon2:checked ~ section .filteralles{
-    display: none;
-}
-#patroon3:checked ~ section .filteralles{
-    display: none;
-}
-#patroon4:checked ~ section .filteralles{
+
+/*eerst bij klik alles verbergen*/
+#filtergeen:checked ~ section .filteralles {
     display: none;
 }
 
-
-
-#patroon1:checked ~ section .filtergeen{
-    display: list-item;
-}
-#patroon2:checked ~ section .filterbolletjes{
-    display: list-item;
-}
-#patroon3:checked ~ section .filtergestreept{
-    display: list-item;
-}
-#patroon4:checked ~ section .filtergeruit{
-    display: list-item;
+#filterbolletjes:checked ~ section .filteralles {
+    display: none;
 }
 
+#filterstreepjes:checked ~ section .filteralles {
+    display: none;
+}
+
+#filtergeruit:checked ~ section .filteralles {
+    display: none;
+}
+
+/*vervolgens het gewenste item tonen*/
+#filteralles:checked ~ section .filteralles {
+    display: inline-block;
+}
+
+#filtergeen:checked ~ section .filtergeen {
+    display: inline-block;
+}
+
+#filterbolletjes:checked ~ section .filterbolletjes {
+    display: inline-block;
+}
+
+#filterstreepjes:checked ~ section .filtergestreept {
+    display: inline-block;
+}
+
+#filtergeruit:checked ~ section .filtergeruit {
+    display: inline-block;
+}
 
 /*einde filters werken*/
 
-/*Begin styling map in contactpagina*/
+/*Begin algemene styling*/
+
+/*styling map in contactpagina*/
 .map {
     width: 640px;
     height: 480px;
     border: 0;
 }
-/*Einde styling map in contactpagina*/
 
 
+/*style hiddentitel*/
+.hiddentitle {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    left: -10000px;
+}
 
+/*styling a*/
+a:link, a:visited, a {
+    text-decoration: none;
+}
+
+/*styling list*/
+ul {
+    list-style: none;
+}
+
+/*einde elgemene styling*/
+
+/*begin grid homepage*/
+#home_main {
+    grid-area: main;
+    display: grid;
+    grid-auto-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+
+    grid-template-areas:
+    "over_ons ons_aanbod personalisering"
+    "over_ons ons_aanbod personalisering";
+}
+
+#home_main {
+    text-align: center;
+}
+
+
+#ons_aanbod {
+    grid-area: ons_aanbod;
+    background-color: #caeeca;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+#over_ons {
+    grid-area: over_ons;
+    background-color: #caeeca;
+    border-radius: 10px;
+    padding: 0 10px;
+    margin-left: 10px;
+
+}
+
+#personalisering {
+    grid-area: personalisering;
+    background-color: #caeeca;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 0 10px;
+
+}
+
+/*einde grid homepage*/
+
+/*begin grid productpage*/
+
+#producten_main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 0.3fr 3fr;
+    gap: 10px;
+    text-align: center;
+    grid-template-areas:
+    "filtertitel producten"
+    "gridfilter1 producten"
+    "gridfilter2 producten"
+    "gridfilter3 producten"
+    "gridfilter4 producten"
+    "gridfilter5 producten";
+}
+
+#producten {
+    grid-area: producten;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    grid-template-areas:
+    "zomer winter sport";
+}
+
+#zomer {
+    grid-area: zomer;
+    background-color: #caeeca;
+    border-radius: 10px;
+}
+
+#zomer ul {
+    padding: 0;
+    align-content: center;
+}
+
+#zomer ul li {
+    width: 200px;
+    height: 320px;
+    vertical-align: top;
+    padding: 0 10px;
+}
+
+#winter {
+    grid-area: winter;
+    background-color: #caeeca;
+    border-radius: 10px;
+}
+
+#winter ul{
+    padding: 0;
+    align-content: center;
+}
+
+#winter ul li {
+    width: 200px;
+    height: 320px;
+    vertical-align: top;
+    padding: 0 10px;
+
+}
+
+#sport {
+    grid-area: sport;
+    background-color: #caeeca;
+    border-radius: 10px;
+}
+
+#sport ul {
+    padding: 0;
+    align-content: center;
+}
+
+#sport ul li {
+    width: 200px;
+    height: 320px;
+    vertical-align: top;
+    padding: 0 10px;
+
+}
+
+input[type="radio"]{
+    position: absolute;
+    left: -10000px;
+
+}
+
+#filtertitel {
+    grid-area: filtertitel;
+}
+
+#gridfilter1 {
+    grid-area: gridfilter1;
+
+}
+
+#gridfilter2 {
+    grid-area: gridfilter2;
+
+}
+
+#gridfilter3 {
+    grid-area: gridfilter3;
+
+}
+#gridfilter4 {
+    grid-area: gridfilter4;
+
+}
+#gridfilter5 {
+    grid-area: gridfilter5;
+
+}
+/*einde grid productpage*/
+
+/*begin grid contact*/
+#contact_main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr 5fr;
+    gap: 10px;
+    grid-template-areas:
+    "email bellen bezoek";
+    text-align: center;
+}
+
+#email {
+    grid-area: email;
+    background-color: #caeeca;
+    border-radius: 10px;
+}
+
+#bezoek {
+    grid-area: bezoek;
+    background-color: #caeeca;
+    border-radius: 10px;
+}
+
+#bellen {
+    grid-area: bellen;
+    background-color: #caeeca;
+    border-radius: 10px;
+}
+/*einde grid contact*/
+
+/*begin grid FAQ*/
+#faq_main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    grid-template-areas:
+    "faq_prod faq_shop";
+    text-align: left;
+}
+
+#faq_prod {
+    grid-area: faq_prod;
+    padding: 0 20px;
+    background-color: #caeeca;
+    border-radius: 10px;
+}
+
+#faq_shop {
+    grid-area: faq_shop;
+    padding: 0 20px;
+    background-color: #caeeca;
+    border-radius: 10px;
+
+}
+/*einde grid FAQ*/
+
+/*begin grid product detail*/
+.proddetail_main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    grid-template-areas:
+    "detail_titel detail_titel"
+    "foto kenmerken";
+}
+
+.detail_titel {
+    grid-area: detail_titel;
+    background-color: #caeeca;
+    border-radius: 10px;
+}
+
+.foto {
+    grid-area: foto;
+    background-color: #caeeca;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.kenmerken {
+    grid-area: kenmerken;
+    background-color: #caeeca;
+    border-radius: 10px;
+    padding: 10px;
+}

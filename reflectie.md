@@ -61,3 +61,6 @@ M5 - 3e commit - Navigation bar + banner afgewerkt
 
 ## 22 Maart 2021
 M5 - 4e commit - werking filters gefixt
+
+## 23 Maart 2021
+M5 - 5e commit - grid toegepast op alle paginas (M5_v1)
