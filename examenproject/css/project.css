@@ -1,3 +1,7 @@
+/*import normalize css sheet*/
+@import "normalize.css";
+
+
 /*begin algemene grid*/
 body {
     display: grid;
@@ -12,9 +16,7 @@ body {
 }
 
 #footer {
-    display: grid;
     grid-area: footer;
-    text-align: center;
 }
 
 /*einde algemene grid*/
@@ -56,6 +58,7 @@ nav .logo {
 .navbar .active {
     background-color: #90ee90;
     border-radius: 5px;
+    user-select: none;
 }
 
 /* Submenu items */
@@ -145,6 +148,19 @@ ul {
 }
 
 /*einde elgemene styling*/
+
+/*begin styling footer*/
+#footer {
+    text-align: center;
+    text-decoration-color: black
+}
+
+#footer a:link, #footer a:visited{
+    color: #323232;
+    text-decoration: underline;
+}
+
+/*einde styling footer*/
 
 /*begin grid homepage*/
 #home_main {
@@ -236,7 +252,7 @@ ul {
     border-radius: 10px;
 }
 
-#winter ul{
+#winter ul {
     padding: 0;
     align-content: center;
 }
@@ -269,7 +285,7 @@ ul {
 }
 
 #producten_main label {
-    transform: translate(35%,0);
+    transform: translate(100%, 0);
     margin: 20px;
 }
 
@@ -288,14 +304,17 @@ ul {
 
 
 }
+
 #gridfilter4 {
     grid-area: gridfilter4;
 
 }
+
 #gridfilter5 {
     grid-area: gridfilter5;
 
 }
+
 /*einde grid productpage*/
 
 /*begin grid contact*/
@@ -328,6 +347,7 @@ ul {
     background-color: #caeeca;
     border-radius: 10px;
 }
+
 /*einde grid contact*/
 
 /*begin grid FAQ*/
@@ -355,6 +375,7 @@ ul {
     border-radius: 10px;
 
 }
+
 /*einde grid FAQ*/
 
 /*begin grid product detail*/
@@ -391,6 +412,7 @@ ul {
     padding-top: 10px;
     font-weight: normal;
 }
+
 /*einde grid product details*/
 
 /*Begin filters werken*/
@@ -436,7 +458,7 @@ ul {
 /*einde filters werken*/
 
 /*begin styling filters*/
-input[type="radio"]{
+input[type="radio"] {
     position: absolute;
     left: -10000px;
 
@@ -449,7 +471,8 @@ input[type="radio"]{
     width: 100px;
     padding: 3px;
 }
-#producten_main input[type="radio"]:checked+label {
+
+#producten_main input[type="radio"]:checked + label {
     background-color: #90ee90;
 }
 
