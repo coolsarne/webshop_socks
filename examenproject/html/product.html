@@ -13,7 +13,6 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- link stylesheet -->
-    <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/project.css">
 </head>
 
@@ -50,19 +49,23 @@
 <main id="producten_main">
     <!-- Filterblok -->
 
-
-    <h2 class="hiddentitle">Filter op patroon</h2>
-
     <input type="radio" id="filteralles" name="filter" value="alles" checked>
-    <label for="filteralles" id="gridfilter1">Alle</label>
     <input type="radio" id="filtergeen" name="filter" value="effen">
-    <label for="filtergeen" id="gridfilter2">Effen</label>
     <input type="radio" id="filterbolletjes" name="filter" value="bolletjes">
-    <label for="filterbolletjes" id="gridfilter3">Bolletjes</label>
     <input type="radio" id="filterstreepjes" name="filter" value="streepjes">
-    <label for="filterstreepjes" id="gridfilter4">Streepjes</label>
     <input type="radio" id="filtergeruit" name="filter" value="geruit">
-    <label for="filtergeruit" id="gridfilter5">Geruit</label>
+
+    <section id="filters">
+        <h2>Filter op patroon</h2>
+        <ul>
+            <li><label for="filteralles">Alle</label></li>
+            <li><label for="filtergeen">Effen</label></li>
+            <li><label for="filterbolletjes">Bolletjes</label></li>
+            <li><label for="filterstreepjes">Streepjes</label></li>
+            <li><label for="filtergeruit">Geruit</label></li>
+        </ul>
+    </section>
+
 
     <!-- Aanbod -->
     <section id="producten">

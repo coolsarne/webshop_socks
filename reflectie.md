@@ -68,3 +68,6 @@ M5 - 5e commit - grid toegepast op alle paginas (M5_v1)
 ## 24 Maart 2021
 M5 - 6e commit - verbeteringen finale versie M5, (M5_v2)
 M5 - 7e commit - extra aanpassingen na validatie (M5_v3)
+
+## 25 Maart 2021
+M5 - 8e commit - kleine aanpassing na feedback docent, M5 in orde (M5_v4)

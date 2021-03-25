@@ -213,11 +213,21 @@ ul {
     display: grid;
     gap: 10px;
     text-align: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 9fr;
     grid-template-areas:
-    "gridfilter1 gridfilter2 gridfilter3 gridfilter4 gridfilter5"
-    "producten producten producten producten producten";
+    "filters producten";
 }
+
+#filters ul {
+    padding: 0;
+    text-align: center;
+}
+
+#filters li{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 
 #producten {
     grid-area: producten;
@@ -283,38 +293,6 @@ ul {
     padding: 0 10px;
 
 }
-
-#producten_main label {
-    transform: translate(100%, 0);
-    margin: 20px;
-}
-
-#gridfilter1 {
-    grid-area: gridfilter1;
-
-}
-
-#gridfilter2 {
-    grid-area: gridfilter2;
-
-}
-
-#gridfilter3 {
-    grid-area: gridfilter3;
-
-
-}
-
-#gridfilter4 {
-    grid-area: gridfilter4;
-
-}
-
-#gridfilter5 {
-    grid-area: gridfilter5;
-
-}
-
 /*einde grid productpage*/
 
 /*begin grid contact*/
@@ -468,8 +446,7 @@ input[type="radio"] {
     border: 3px solid darkgreen;
     border-radius: 10px;
     height: 20px;
-    width: 100px;
-    padding: 3px;
+    padding: 5px 15px;
 }
 
 #producten_main input[type="radio"]:checked + label {
