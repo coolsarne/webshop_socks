@@ -449,12 +449,18 @@ input[type="radio"] {
     padding: 5px 15px;
 }
 
-#producten_main input[type="radio"]:checked + label {
+#filteralles:checked~#filters .filter1,
+#filtergeen:checked~#filters .filter2,
+#filterbolletjes:checked~#filters .filter3,
+#filterstreepjes:checked~#filters .filter4,
+#filtergeruit:checked~#filters .filter5{
     background-color: #90ee90;
+
 }
 
 #producten_main label:hover {
     background-color: #caeeca;
+
 }
 
 /*einde styling filters*/
