@@ -75,3 +75,4 @@ M5 - 9e commit - kleine fix in stylesheet, geselecteerde filter zichtbaar
 
 ## 27 Maart 2021
 M5 - 10e commit - 3 verschillende html tags toegevoegd (pre, aside, strong) om terug genoeg variatie te hebben
+D1 - 1e commit - commit Deadline 1 (niets veranderd in bestanden, puur tag deadline)
