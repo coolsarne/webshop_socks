@@ -119,6 +119,11 @@ h1 {
 
 
 /*Begin algemene styling*/
+.adres{
+    text-align: center;
+    font: inherit;
+}
+
 
 /*styling map in contactpagina*/
 .map {
@@ -300,18 +305,10 @@ ul {
     grid-area: main;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 2fr;
     gap: 10px;
     grid-template-areas:
-    "bellen bezoek"
-    "email bezoek";
+    "bereik bezoek";
     text-align: center;
-}
-
-#email {
-    grid-area: email;
-    background-color: #caeeca;
-    border-radius: 10px;
 }
 
 #bezoek {
@@ -320,10 +317,29 @@ ul {
     border-radius: 10px;
 }
 
-#bellen {
-    grid-area: bellen;
+#bereik {
+    grid-area: bereik;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas:
+    "bereiktitel"
+    "email"
+    "bellen";
     background-color: #caeeca;
     border-radius: 10px;
+}
+
+#bereiktitel {
+    grid-area: bereiktitel;
+}
+
+#email {
+    grid-area: email;
+}
+
+
+#bellen {
+    grid-area: bellen;
 }
 
 /*einde grid contact*/

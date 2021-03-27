@@ -72,3 +72,6 @@ M5 - 7e commit - extra aanpassingen na validatie (M5_v3)
 ## 25 Maart 2021
 M5 - 8e commit - kleine aanpassing na feedback docent, M5 in orde (M5_v4) + outline gefixt
 M5 - 9e commit - kleine fix in stylesheet, geselecteerde filter zichtbaar
+
+## 27 Maart 2021
+M5 - 10e commit - 3 verschillende html tags toegevoegd (pre, aside, strong) om terug genoeg variatie te hebben
