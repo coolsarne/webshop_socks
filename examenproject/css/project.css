@@ -410,6 +410,61 @@ ul {
 
 /*einde grid product details*/
 
+/*Begin personaliserings pagina*/
+
+.personalisering_main {
+    margin: auto;
+    text-align: center;
+    width: 60vw;
+    background-color: #caeeca;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.personaliseringsopties fieldset{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.personaliseringsopties label, .personaliseringsopties p {
+    flex-basis: 40vw;
+}
+
+.personaliseringsopties input:not(.radiobutton), .personaliseringsopties select{
+    margin-bottom: 5px;
+    width: 13vw;
+}
+
+.personaliseringsopties ul {
+    padding: 0;
+    margin: 0;
+    width: 13vw;
+}
+
+.personaliseringsopties ul li {
+    padding-top: 10px;
+}
+
+
+.personaliseringsopties fieldset {
+    margin-bottom: 5px;
+}
+
+.personaliseringsopties select .csmstekst {
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+.personaliseringsopties select .tnrtekst {
+    font-family: "Times New Roman", sans-serif;
+}
+
+.personaliseringsopties select .arialtekst {
+    font-family: "Arial", sans-serif;
+}
+
+/*Einde personaliserings pagina*/
+
 /*Begin filters werken*/
 
 /*eerst bij klik alles verbergen*/
@@ -453,7 +508,7 @@ ul {
 /*einde filters werken*/
 
 /*begin styling filters*/
-input[type="radio"] {
+#producten_main input[type="radio"]{
     position: absolute;
     left: -10000px;
 
@@ -470,7 +525,7 @@ input[type="radio"] {
 #filtergeen:checked~#filters .filter2,
 #filterbolletjes:checked~#filters .filter3,
 #filterstreepjes:checked~#filters .filter4,
-#filtergeruit:checked~#filters .filter5{
+#filtergeruit:checked~#filters .filter5 {
     background-color: #90ee90;
 
 }

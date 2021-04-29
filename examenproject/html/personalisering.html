@@ -43,7 +43,7 @@
     <img src="../media/supersocksbanner.webp" alt="Website banner" class="banner"/>
 </header>
 
-<main>
+<main class="personalisering_main">
     <!-- uitleg ivm met personalisering -->
     <section>
         <h2>Uitleg</h2>
@@ -62,20 +62,106 @@
             <p>Als u kiest om uw sokken te laten bedrukken met een afbeelding, kan u kiezen tussen 2 grote opties. U kan
                 kiezen om ze op elke sok 1 keer in het groot te plaatsen, of u kan kiezen om
                 de afbeelding als een patroon over uw sokken te bedrukken. Voor sokken bedrukt met een afbeelding
-                betaalt u een vaste prijs van &euro;19,00.</p>
+                betaalt u &euro;19,00. Voor sokken met een afbeeldingen patroon betaalt u &euro;23,00.
+                Vergeet uw afbeelding niet op te laden als u hiervoor kiest.</p>
+        </section>
+
+        <section>
+            <h3>Combinatie</h3>
+            <p>U kan ook kiezen voor deze 2 te combineren, dan zal de tekst vanboven geplaatst worden en de afbeelding
+                vanonder. Als u voor een afbeeldingen-patroon kies zal dit heel de sok bedekken, en dan zal de tekst op
+                de voorkant terechtkomen. Voor een paar van deze sokken betaald u een vaste prijs van &euro;25,00
+                Bedrukking gebeurt altijd op witte sokken.</p>
         </section>
     </section>
     <!-- Form -->
     <section>
         <h2>Opties</h2>
 
-        <form action="personalisering_confirmation.html" method="get"></form>
+        <form action="personalisering_confirmation.html" method="GET" target="_blank" class="personaliseringsopties">
+            <fieldset>
+                <legend>Personaliseer hier uw sokken</legend>
+                <label for="maat">Maat:</label>
+                <select name="schoenmaten" id="maat" required>
+                    <option>32 - 36</option>
+                    <option>37 - 42</option>
+                    <option>43 - 48</option>
+                </select>
+                <label for="tekst">Tekst:</label>
+                <input type="text" id="tekst" name="tekst" maxlength="25" placeholder="Type hier uw tekst.">
+                <label for="lettertype">Lettertype:</label>
+                <select name="lettertype" id="lettertype">
+                    <option class="arialtekst">Arial</option>
+                    <option class="tnrtekst">Times new Roman</option>
+                    <option class="csmstekst">Comic sans MS</option>
+                </select>
+                <label for="tekstkleur">Tekstkleur:</label>
+                <input type="color" id="tekstkleur" name="tekstkleur">
+                <label for="afbeelding">Afbeelding:</label>
+                <input type="file" id="afbeelding" name="afbeelding">
+                <p>Type bedrukking:</p>
+                <ul>
+                    <li><input type="radio" id="typebedrukking_1" name="typebedrukking" value="1_grote_afbeelding" class="radiobutton">
+                        <label class="radiobutton" for="typebedrukking_1">1 grote afbeelding</label></li>
+                    <li><input type="radio" id="typebedrukking_2" name="typebedrukking" value="afbeeldingen_patroon" class="radiobutton">
+                        <label class="radiobutton" for="typebedrukking_2">Afbeeldingen-patroon</label></li>
+                    <li><input type="radio" id="typebedrukking_3" name="typebedrukking" value="geen_afbeelding" class="radiobutton">
+                        <label class="radiobutton" for="typebedrukking_3">Geen afbeelding</label></li>
+                </ul>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Persoonlijke informatie</legend>
+                <label for="voornaam">Voornaam:</label>
+                <input type="text" id="voornaam" name="voornaam" required>
+                <label for="achternaam">Achternaam:</label>
+                <input type="text" id="achternaam" name="achternaam" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="joske.vermeulen@domein.com" required>
+                <label for="str+nr">Straat + huisnummer:</label>
+                <input type="text" id="str+nr" name="str+nr" required>
+                <label for="plts+post">Plaats + postcode:</label>
+                <input type="text" id="plts+post" name="plts+post" required>
+                <label for="mening">Duid via de slider aan hoe tevreden u over ons bent. (van niet tevreden naar heel
+                    tevreden)</label>
+                <input type="range" min="1" max="10" value="5" id="mening">
+
+            </fieldset>
+            <input class="submitform" type="submit" value="Verzenden">
+        </form>
 
 
     </section>
 
 
 </main>
+
+<!-- Footer -->
+<footer id="footer">
+
+    <section>
+
+        <h2 class="hiddentitle">Footer</h2>
+
+        <section>
+            <h3>Vind ons op</h3>
+            <a href="mailto:contact&#64;supersocks.be">Mail</a>
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            <a href="https://www.twitter.com" target="_blank">Twitter</a>
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        </section>
+
+        <section>
+            <h3>Auteursrechten</h3>
+            <p><small>Gemaakt door: Arne Cools</small></p>
+            <p><small>&#169;Alle rechten voorbehouden</small></p>
+
+        </section>
+    </section>
+
+</footer>
 
 </body>
 </html>

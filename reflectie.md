@@ -79,3 +79,6 @@ D1 - 1e commit - commit Deadline 1 (niets veranderd in bestanden, puur tag deadl
 
 ## 27 April 2021
 M7 - 1e commit - Personaliseringspagina gemaakt
+
+## 29 April 2021
+M7 - 2e push - M7 afgemaakt, forms in orde gebracht op personaliseerpagina
