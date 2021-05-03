@@ -120,7 +120,7 @@ h1 {
 
 
 /*Begin algemene styling*/
-.adres{
+.adres {
     text-align: center;
     font: inherit;
 }
@@ -161,7 +161,7 @@ ul {
     text-decoration-color: black
 }
 
-#footer a:link, #footer a:visited{
+#footer a:link, #footer a:visited {
     color: #323232;
     text-decoration: underline;
 }
@@ -229,7 +229,7 @@ ul {
     text-align: center;
 }
 
-#filters li{
+#filters li {
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -299,6 +299,7 @@ ul {
     padding: 0 10px;
 
 }
+
 /*einde grid productpage*/
 
 /*begin grid contact*/
@@ -421,7 +422,7 @@ ul {
     border-radius: 10px;
 }
 
-.personaliseringsopties fieldset{
+.personaliseringsopties fieldset {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -431,7 +432,7 @@ ul {
     flex-basis: 40vw;
 }
 
-.personaliseringsopties input:not(.radiobutton), .personaliseringsopties select{
+.personaliseringsopties input:not(.radiobutton), .personaliseringsopties select {
     margin-bottom: 5px;
     width: 13vw;
 }
@@ -452,7 +453,7 @@ ul {
     margin-bottom: 5px;
 }
 
-.personaliseringsopties input[type="checkbox"]{
+.personaliseringsopties input[type="checkbox"] {
     margin-top: 3px;
     margin-bottom: 10px;
 }
@@ -514,7 +515,7 @@ ul {
 /*einde filters werken*/
 
 /*begin styling filters*/
-#producten_main input[type="radio"]{
+#producten_main input[type="radio"] {
     position: absolute;
     left: -10000px;
 
@@ -527,11 +528,11 @@ ul {
     padding: 5px 15px;
 }
 
-#filteralles:checked~#filters .filter1,
-#filtergeen:checked~#filters .filter2,
-#filterbolletjes:checked~#filters .filter3,
-#filterstreepjes:checked~#filters .filter4,
-#filtergeruit:checked~#filters .filter5 {
+#filteralles:checked ~ #filters .filter1,
+#filtergeen:checked ~ #filters .filter2,
+#filterbolletjes:checked ~ #filters .filter3,
+#filterstreepjes:checked ~ #filters .filter4,
+#filtergeruit:checked ~ #filters .filter5 {
     background-color: #90ee90;
 
 }
@@ -542,3 +543,33 @@ ul {
 }
 
 /*einde styling filters*/
+
+/*Begin responsive ontwerp*/
+
+/*begin responsive navbar*/
+
+@media screen and (max-width: 1020px) {
+
+    nav,
+    nav ul,
+    nav ul li,
+    nav ul li a,
+    nav ul li .submenu {
+        background-size: cover;
+        width: 100%;
+    }
+
+    nav ul {
+        display: block;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+}
+
+
+
+/*einde responsive navbar*/
+
+
+/*Einde responsive ontwerp*/

@@ -50,8 +50,7 @@
 
         <section>
             <h3>Tekst</h3>
-            <p>Als u kiest voor uw sokken te personaliseren met een tekstbedrukking. Dit is enkel mogelijk op
-                wintersokken. De tekst wordt geplaatst vanboven aan de buitenkant van uw voeten.
+            <p>Als u kiest voor uw sokken te personaliseren met een tekstbedrukking. De tekst wordt geplaatst vanboven aan de buitenkant van uw voeten.
                 U kan kiezen tussen 3 lettertypes en de kleur van de tekst is ook volledig personaliseerbaar.
                 Voor sokken met tekstbedrukking betaalt u een vaste prijs van &euro;15,00.</p>
 
@@ -81,15 +80,21 @@
         <form action="personalisering_confirmation.html" method="GET" target="_blank" class="personaliseringsopties">
             <fieldset>
                 <legend>Personaliseer hier uw sokken</legend>
-                <label for="aantalparen">Aantal paren:</label>
+                <label for="aantalparen">*Aantal paren:</label>
                 <input type="number" name="aantalparen" id="aantalparen" min="1" max="99" value="1" required>
-                <label for="maat">Maat:</label>
+                <label for="maat">*Maat:</label>
                 <select name="schoenmaten" id="maat" required>
                     <option>32 - 36</option>
                     <option>37 - 42</option>
                     <option>43 - 48</option>
                 </select>
-                <label for="sokkleur">Kleur van de sokken:</label>
+                <label for="typesok">*Type sokken:</label>
+                <select name="typesok" id="typesok" required>
+                    <option>Zomersokken</option>
+                    <option>Wintersokken</option>
+                    <option>Sportsokken</option>
+                </select>
+                <label for="sokkleur">*Kleur van de sokken:</label>
                 <input type="color" id="sokkleur" name="sokkleur" required>
                 <label for="tekstbedrukking">Wilt u tekstbedrukking?</label>
                 <input type="checkbox" id="tekstbedrukking" name="tekstbedrukking">
@@ -103,7 +108,7 @@
                 </select>
                 <label for="tekstkleur">Tekstkleur:</label>
                 <input type="color" id="tekstkleur" name="tekstkleur">
-                <p>Type bedrukking:</p>
+                <p>*Type bedrukking:</p>
                 <ul>
                     <li><input type="radio" id="typebedrukking_1" name="typebedrukking" value="1_grote_afbeelding" class="radiobutton" required>
                         <label class="radiobutton" for="typebedrukking_1">1 grote afbeelding</label></li>
@@ -118,15 +123,15 @@
 
             <fieldset>
                 <legend>Persoonlijke informatie</legend>
-                <label for="voornaam">Voornaam:</label>
+                <label for="voornaam">*Voornaam:</label>
                 <input type="text" id="voornaam" name="voornaam" required>
-                <label for="achternaam">Achternaam:</label>
+                <label for="achternaam">*Achternaam:</label>
                 <input type="text" id="achternaam" name="achternaam" required>
-                <label for="email">Email:</label>
+                <label for="email">*Email:</label>
                 <input type="email" id="email" name="email" placeholder="joske.vermeulen@domein.com" required>
-                <label for="strnr">Straat + huisnummer:</label>
+                <label for="strnr">*Straat + huisnummer:</label>
                 <input type="text" id="strnr" name="str+nr" required>
-                <label for="pltspost">Plaats + postcode:</label>
+                <label for="pltspost">*Plaats + postcode:</label>
                 <input type="text" id="pltspost" name="plts+post" required>
                 <label for="mening">Duid via de slider aan hoe tevreden u over ons bent. (van niet tevreden naar heel
                     tevreden)</label>

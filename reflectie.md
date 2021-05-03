@@ -85,4 +85,6 @@ M7 - 2e push - M7 afgemaakt, forms in orde gebracht op personaliseerpagina
 M7 - 3e push - Kleine fixes na validatie groepsgenoot
 
 ## 3 Mei 2021
-M7 - 4e commit - M7 verbeterd na feedback docent (M7_v3)
+M7 - 4e commit - M7 verbeterd na feedback docent
+M7 - 5e commit - M7 finish na uiteindelijke feedback (M7_v3)
+M8 - 1e commit - Eerste poging navbar fixen met media queries
