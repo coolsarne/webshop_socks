@@ -81,12 +81,18 @@
         <form action="personalisering_confirmation.html" method="GET" target="_blank" class="personaliseringsopties">
             <fieldset>
                 <legend>Personaliseer hier uw sokken</legend>
+                <label for="aantalparen">Aantal paren:</label>
+                <input type="number" name="aantalparen" id="aantalparen" min="1" max="99" value="1" required>
                 <label for="maat">Maat:</label>
                 <select name="schoenmaten" id="maat" required>
                     <option>32 - 36</option>
                     <option>37 - 42</option>
                     <option>43 - 48</option>
                 </select>
+                <label for="sokkleur">Kleur van de sokken:</label>
+                <input type="color" id="sokkleur" name="sokkleur" required>
+                <label for="tekstbedrukking">Wilt u tekstbedrukking?</label>
+                <input type="checkbox" id="tekstbedrukking" name="tekstbedrukking">
                 <label for="tekst">Tekst:</label>
                 <input type="text" id="tekst" name="tekst" maxlength="25" placeholder="Type hier uw tekst.">
                 <label for="lettertype">Lettertype:</label>
@@ -97,18 +103,17 @@
                 </select>
                 <label for="tekstkleur">Tekstkleur:</label>
                 <input type="color" id="tekstkleur" name="tekstkleur">
-                <label for="afbeelding">Afbeelding:</label>
-                <input type="file" id="afbeelding" name="afbeelding">
                 <p>Type bedrukking:</p>
                 <ul>
-                    <li><input type="radio" id="typebedrukking_1" name="typebedrukking" value="1_grote_afbeelding" class="radiobutton">
+                    <li><input type="radio" id="typebedrukking_1" name="typebedrukking" value="1_grote_afbeelding" class="radiobutton" required>
                         <label class="radiobutton" for="typebedrukking_1">1 grote afbeelding</label></li>
-                    <li><input type="radio" id="typebedrukking_2" name="typebedrukking" value="afbeeldingen_patroon" class="radiobutton">
+                    <li><input type="radio" id="typebedrukking_2" name="typebedrukking" value="afbeeldingen_patroon" class="radiobutton" required>
                         <label class="radiobutton" for="typebedrukking_2">Afbeeldingen-patroon</label></li>
-                    <li><input type="radio" id="typebedrukking_3" name="typebedrukking" value="geen_afbeelding" class="radiobutton">
+                    <li><input type="radio" id="typebedrukking_3" name="typebedrukking" value="geen_afbeelding" class="radiobutton" required>
                         <label class="radiobutton" for="typebedrukking_3">Geen afbeelding</label></li>
                 </ul>
-
+                <label for="afbeelding">Afbeelding:</label>
+                <input type="file" id="afbeelding" name="afbeelding">
             </fieldset>
 
             <fieldset>

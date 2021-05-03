@@ -438,8 +438,9 @@ ul {
 
 .personaliseringsopties ul {
     padding: 0;
-    margin: 0;
     width: 13vw;
+    text-align: left;
+    margin: 0 0 10px;
 }
 
 .personaliseringsopties ul li {
@@ -449,6 +450,11 @@ ul {
 
 .personaliseringsopties fieldset {
     margin-bottom: 5px;
+}
+
+.personaliseringsopties input[type="checkbox"]{
+    margin-top: 3px;
+    margin-bottom: 10px;
 }
 
 .personaliseringsopties select .csmstekst {

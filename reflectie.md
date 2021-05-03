@@ -83,3 +83,6 @@ M7 - 1e commit - Personaliseringspagina gemaakt
 ## 29 April 2021
 M7 - 2e push - M7 afgemaakt, forms in orde gebracht op personaliseerpagina
 M7 - 3e push - Kleine fixes na validatie groepsgenoot
+
+## 3 Mei 2021
+M7 - 4e commit - M7 verbeterd na feedback docent (M7_v3)
