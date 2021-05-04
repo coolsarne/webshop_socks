@@ -23,13 +23,12 @@
     <!-- navigation bar -->
     <nav class="navbar">
         <h2 class="hiddentitle">Navigatie</h2>
-        <img src="../media/supersockslogo_small.webp" alt="Website logo" class="logo">
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="product.html">Producten</a></li>
             <li class="active">Personalisering</li>
             <li class="submenu">
-                <a href="contact.html">Contact &#9660;</a>
+                <a href="contact.html">Contact&#9660;</a>
                 <ul>
                     <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
                     <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
@@ -52,32 +51,29 @@
             <h3>Tekst</h3>
             <p>Als u kiest voor uw sokken te personaliseren met een tekstbedrukking. De tekst wordt geplaatst vanboven aan de buitenkant van uw voeten.
                 U kan kiezen tussen 3 lettertypes en de kleur van de tekst is ook volledig personaliseerbaar.
-                Voor sokken met tekstbedrukking betaalt u een vaste prijs van &euro;15,00.</p>
+                Voor sokken met tekstbedrukking betaalt u een vaste meerprijs van &euro;5,00.</p>
 
         </section>
 
         <section>
             <h3>Afbeelding</h3>
-            <p>Als u kiest om uw sokken te laten bedrukken met een afbeelding, kan u kiezen tussen 2 grote opties. U kan
-                kiezen om ze op elke sok 1 keer in het groot te plaatsen, of u kan kiezen om
-                de afbeelding als een patroon over uw sokken te bedrukken. Voor sokken bedrukt met een afbeelding
-                betaalt u &euro;19,00. Voor sokken met een afbeeldingen patroon betaalt u &euro;23,00.
+            <p>Als u kiest om uw sokken te laten bedrukken met een afbeelding, zal de afbeelding aan de binnenkant van de voet gedrukt worden.
+                Let op: Voor sommige sokken zal dit overlappen met het eventuele patroon dat al aanwezig is. Voor sokken bedrukt met een afbeelding
+                betaalt u een vaste meerprijs van &euro;10,00.
                 Vergeet uw afbeelding niet op te laden als u hiervoor kiest.</p>
         </section>
 
         <section>
             <h3>Combinatie</h3>
-            <p>U kan ook kiezen voor deze 2 te combineren, dan zal de tekst vanboven geplaatst worden en de afbeelding
-                vanonder. Als u voor een afbeeldingen-patroon kies zal dit heel de sok bedekken, en dan zal de tekst op
-                de voorkant terechtkomen. Voor een paar van deze sokken betaald u een vaste prijs van &euro;25,00
-                Bedrukking gebeurt altijd op witte sokken.</p>
+            <p>U kan ook kiezen voor deze 2 te combineren, dan zal de tekst aan de buitenkant van de voeten gedrukt worden en de afbeelding
+                aan de binnenkant. Voor een paar van deze sokken betaald u een vaste meerprijs van &euro;13,00</p>
         </section>
     </section>
     <!-- Form -->
     <section>
         <h2>Opties</h2>
 
-        <form action="personalisering_confirmation.html" method="GET" target="_blank" class="personaliseringsopties">
+        <form action="personalisering_confirmation.html" method="GET" class="personaliseringsopties">
             <fieldset>
                 <legend>Personaliseer hier uw sokken</legend>
                 <label for="aantalparen">*Aantal paren:</label>
@@ -88,16 +84,45 @@
                     <option>37 - 42</option>
                     <option>43 - 48</option>
                 </select>
-                <label for="typesok">*Type sokken:</label>
+                <label for="typesok">*Keuze sok:</label>
                 <select name="typesok" id="typesok" required>
-                    <option>Zomersokken</option>
-                    <option>Wintersokken</option>
-                    <option>Sportsokken</option>
+                    <option>Gele korte sokken</option>
+                    <option>Grijze korte sokken</option>
+                    <option>Enkelsokken met kleine bolletjes</option>
+                    <option>Geruitte korte sokken</option>
+                    <option>Groen-geel gestreepte korte sokken</option>
+                    <option>Multicolor gestreepte korte sokken</option>
+                    <option>Zwarte korte sokken</option>
+                    <option>Witte enkelsokken</option>
+                    <option>Zwarte enkelsokken</option>
+                    <option>Witte korte sokken</option>
+                    <option>Donkerblauwe lange sokken met witte bolletjes</option>
+                    <option>Zwarte lange sokken met multicolore bolletjes</option>
+                    <option>Lange sokken multicolor geruit</option>
+                    <option>Multicolor gestreepte lange sokken</option>
+                    <option>Multicolor gradient gestreepte lange sokken</option>
+                    <option>Lange witte sokken extra warm</option>
+                    <option>Zwarte lange sokken met witte bolletjes</option>
+                    <option>Lange zwarte sokken extra warm</option>
+                    <option>Casual lange zwarte sokken</option>
+                    <option>Extra lange zwarte sokken geruit</option>
+                    <option>Lange sokken met zwart en witte strepen</option>
+                    <option>Loopsokken</option>
+                    <option>All in one sportsokken wit</option>
+                    <option>All in one sportsokken zwart</option>
+                    <option>Tennissokken zwart wit gestreept</option>
+                    <option>All in one sportsokken wit extra steun</option>
+                    <option>Compressiesokken</option>
                 </select>
-                <label for="sokkleur">*Kleur van de sokken:</label>
-                <input type="color" id="sokkleur" name="sokkleur" required>
-                <label for="tekstbedrukking">Wilt u tekstbedrukking?</label>
-                <input type="checkbox" id="tekstbedrukking" name="tekstbedrukking">
+                <p>*Type bedrukking:</p>
+                <ul>
+                    <li><input type="radio" id="typebedrukking_1" name="typebedrukking" value="afbeelding" class="radiobutton" required>
+                        <label class="radiobutton" for="typebedrukking_1">Afbeelding</label></li>
+                    <li><input type="radio" id="typebedrukking_2" name="typebedrukking" value="tekst" class="radiobutton" required>
+                        <label class="radiobutton" for="typebedrukking_2">Tekstbedrukking</label></li>
+                    <li><input type="radio" id="typebedrukking_3" name="typebedrukking" value="combinatie" class="radiobutton" required>
+                        <label class="radiobutton" for="typebedrukking_3">Afbeelding en tekstbedrukking</label></li>
+                </ul>
                 <label for="tekst">Tekst:</label>
                 <input type="text" id="tekst" name="tekst" maxlength="25" placeholder="Type hier uw tekst.">
                 <label for="lettertype">Lettertype:</label>
@@ -108,19 +133,10 @@
                 </select>
                 <label for="tekstkleur">Tekstkleur:</label>
                 <input type="color" id="tekstkleur" name="tekstkleur">
-                <p>*Type bedrukking:</p>
-                <ul>
-                    <li><input type="radio" id="typebedrukking_1" name="typebedrukking" value="1_grote_afbeelding" class="radiobutton" required>
-                        <label class="radiobutton" for="typebedrukking_1">1 grote afbeelding</label></li>
-                    <li><input type="radio" id="typebedrukking_2" name="typebedrukking" value="afbeeldingen_patroon" class="radiobutton" required>
-                        <label class="radiobutton" for="typebedrukking_2">Afbeeldingen-patroon</label></li>
-                    <li><input type="radio" id="typebedrukking_3" name="typebedrukking" value="geen_afbeelding" class="radiobutton" required>
-                        <label class="radiobutton" for="typebedrukking_3">Geen afbeelding</label></li>
-                </ul>
+
                 <label for="afbeelding">Afbeelding:</label>
                 <input type="file" id="afbeelding" name="afbeelding">
             </fieldset>
-
             <fieldset>
                 <legend>Persoonlijke informatie</legend>
                 <label for="voornaam">*Voornaam:</label>
@@ -136,7 +152,8 @@
                 <label for="mening">Duid via de slider aan hoe tevreden u over ons bent. (van niet tevreden naar heel
                     tevreden)</label>
                 <input type="range" min="1" max="10" value="5" id="mening" name="rating">
-
+                <label class="checkboxlabel" for="termsconditions">*Ik aanvaard de algemene voorwaarden:</label>
+                <input type="checkbox" name="termsconditions" id="termsconditions" required>
             </fieldset>
             <input class="submitform" type="submit" value="Verzenden">
         </form>

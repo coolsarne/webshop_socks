@@ -88,3 +88,6 @@ M7 - 3e push - Kleine fixes na validatie groepsgenoot
 M7 - 4e commit - M7 verbeterd na feedback docent
 M7 - 5e commit - M7 finish na uiteindelijke feedback (M7_v3)
 M8 - 1e commit - Eerste poging navbar fixen met media queries
+
+## 4 Mei 2021
+M7 - 6e commit - M7 finish na feedback docent (M7_v4)
