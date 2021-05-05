@@ -94,3 +94,4 @@ M7 - 6e commit - M7 finish na feedback docent (M7_v4)
 
 ## 5 Mei 2021
 M8 - 2e commit - Homepage en productpage volledig responsive
+M8 - 3e commit - Alle paginas volledig responsive gemaakt (Eerste versie M8 voor validatie teammate)

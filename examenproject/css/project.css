@@ -53,6 +53,10 @@ body {
     margin-right: 1vw;
 }
 
+.navbar ul li a {
+    width: inherit;
+}
+
 .navbar ul li:hover {
     background-color: #caeeca;
     border-radius: 5px;
@@ -140,8 +144,8 @@ h1 {
 
 /*styling map in contactpagina*/
 .map {
-    width: 640px;
-    height: 480px;
+    width: 40vw;
+    height: 30vw;
     border: 0;
 }
 
@@ -201,15 +205,20 @@ ul {
     grid-area: ons_aanbod;
     background-color: #caeeca;
     border-radius: 10px;
-    padding: 0 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
 }
 
 #over_ons {
     grid-area: over_ons;
     background-color: #caeeca;
     border-radius: 10px;
-    padding: 0 10px;
-    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
 
 }
 
@@ -217,8 +226,10 @@ ul {
     grid-area: personalisering;
     background-color: #caeeca;
     border-radius: 10px;
-    margin-right: 10px;
-    padding: 0 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
 
 }
 
@@ -438,6 +449,8 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .personaliseringsopties label, .personaliseringsopties p {
@@ -566,18 +579,19 @@ ul {
 
 @media screen and (max-width: 1255px){
     #home_main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         grid-template-areas:
     "over_ons personalisering"
     "ons_aanbod ons_aanbod";
+        background-size: cover;
     }
+
 }
 
 @media screen and (max-width: 890px){
     #home_main {
-        grid-template-areas:
-    "over_ons"
-    "personalisering"
-    "ons_aanbod";
+        display: block;
     }
 }
 
@@ -601,30 +615,131 @@ ul {
     }
 }
 
+
 /*Einde productpage*/
 
+/*contactpage*/
+@media screen and (min-width: 1921px){
+    #bereik {
+        font-size: 1vw;
+    }
+
+    #bezoek {
+        font-size: 1vw;
+    }
+}
+
+
+@media screen and (max-width: 1000px){
+    #contact_main {
+
+        display: block;
+    }
+    #email {
+        height: min-content;
+    }
+}
+
+/*Einde contactpage*/
+
+/*faq*/
+
+@media screen and (max-width: 800px){
+    #faq_main {
+        display: block;
+    }
+}
+
+/*einde faq*/
+
+/*Product detail*/
+
+@media screen and (max-width: 750px){
+    .proddetail_main {
+        display: block;
+    }
+    .kenmerken {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .proddetail_main .algemeen img {
+        width: 80%;
+        height: 80%;
+    }
+}
+
+
+/*Einde product detail*/
+
+/*personalisering*/
+
+@media screen and (max-width: 1030px){
+    .personaliseringsopties fieldset {
+        justify-content: left;
+    }
+
+    .personaliseringsopties label, .personaliseringsopties p {
+        flex-basis: 32vw;
+        text-align: left;
+    }
+
+    .personaliseringsopties input:not(.radiobutton), .personaliseringsopties select {
+        width: 20vw;
+    }
+
+}
+
+/*einde personalisering*/
 
 /*begin responsive navbar*/
 
-/*@media screen and (max-width: 800px) {*/
+@media screen and (max-width: 770px) {
+    h1 {
+        font-size: 45px;
+        position: absolute;
+        top: 75%;
+    }
 
-/*    nav,*/
-/*    nav ul,*/
-/*    nav ul li,*/
-/*    nav ul li a,*/
-/*    nav ul li .submenu {*/
-/*        background-size: cover;*/
-/*        width: 100%;*/
-/*    }*/
+    .headerconfirmationpage {
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+        top: 80%;
+    }
 
-/*    nav ul {*/
-/*        display: block;*/
-/*        margin-left: 0;*/
-/*        padding-left: 0;*/
-/*    }*/
+    .navbar {
+        margin: auto;
+    }
 
-/*}*/
+    .navbar ul {
+        margin: auto;
+        display: block;
+        text-align: center;
+    }
 
+    .navbar ul li {
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+
+    .navbar .submenu ul {
+        width: 30%;
+        float: left;
+    }
+
+    .navbar .submenu ul li {
+        width: 70%;
+        float: left;
+    }
+}
+
+@media screen and (min-width: 1920px){
+    h1 {
+        font-size: 96px;
+    }
+}
 
 /*einde responsive navbar*/
 
