@@ -91,3 +91,6 @@ M8 - 1e commit - Eerste poging navbar fixen met media queries
 
 ## 4 Mei 2021
 M7 - 6e commit - M7 finish na feedback docent (M7_v4)
+
+## 5 Mei 2021
+M8 - 2e commit - Homepage en productpage volledig responsive

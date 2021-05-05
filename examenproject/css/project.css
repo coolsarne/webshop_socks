@@ -25,6 +25,8 @@ body {
 .navbar {
     grid-area: navigatie;
     text-align: center;
+    margin: 0;
+    width: 90vw;
 }
 
 .navbar a:link, .navbar a:visited {
@@ -35,17 +37,20 @@ body {
 .navbar ul {
     font-size: 18px;
     padding: 4px 0;
-    margin: 0.5vw;
+
     display: flex;
     align-content: center;
+    margin: 0 10vw 0 10vw;
+    width: 80vw;
+
 }
 
 .navbar ul li {
     display: inline;
-    width: 17.5vw;
+    width: 15vw;
     padding: 10px 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
 
 .navbar ul li:hover {
@@ -96,6 +101,7 @@ body {
 .navbar .submenu ul li:hover {
     background-color: #9be09b;
 }
+
 
 /*Einde styling navigatie bar*/
 
@@ -556,26 +562,68 @@ ul {
 
 /*Begin responsive ontwerp*/
 
-/*begin responsive navbar*/
+/*Homepage*/
 
-@media screen and (max-width: 1100px) {
-
-    nav,
-    nav ul,
-    nav ul li,
-    nav ul li a,
-    nav ul li .submenu {
-        background-size: cover;
-        width: 100%;
+@media screen and (max-width: 1255px){
+    #home_main {
+        grid-template-areas:
+    "over_ons personalisering"
+    "ons_aanbod ons_aanbod";
     }
+}
 
-    nav ul {
+@media screen and (max-width: 890px){
+    #home_main {
+        grid-template-areas:
+    "over_ons"
+    "personalisering"
+    "ons_aanbod";
+    }
+}
+
+/*Einde homepage*/
+
+/*Productpage*/
+@media screen and (max-width: 820px){
+    #producten_main {
         display: block;
-        margin-left: 0;
-        padding-left: 0;
+    }
+    #filters ul li{
+        display: inline-block;
+
     }
 
 }
+
+@media screen and (max-width: 700px){
+    #producten {
+        display: block;
+    }
+}
+
+/*Einde productpage*/
+
+
+/*begin responsive navbar*/
+
+/*@media screen and (max-width: 800px) {*/
+
+/*    nav,*/
+/*    nav ul,*/
+/*    nav ul li,*/
+/*    nav ul li a,*/
+/*    nav ul li .submenu {*/
+/*        background-size: cover;*/
+/*        width: 100%;*/
+/*    }*/
+
+/*    nav ul {*/
+/*        display: block;*/
+/*        margin-left: 0;*/
+/*        padding-left: 0;*/
+/*    }*/
+
+/*}*/
 
 
 /*einde responsive navbar*/
