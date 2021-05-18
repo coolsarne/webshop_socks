@@ -498,8 +498,27 @@ ul {
 .personaliseringsopties select .arialtekst {
     font-family: "Arial", sans-serif;
 }
+.personaliseringsopties span {
+    display: block;
+}
+
+.personaliseringsopties fieldset span {
+    display: block;
+    flex-basis: 100%;
+    text-align: right;
+    margin-right: 3.1vw;
+    margin-bottom: 3px;
+}
 
 /*Einde personaliserings pagina*/
+
+/*Begin confirmation page*/
+
+.personalisering_confirmation_main {
+    text-align: center;
+}
+
+/*Einde confirmation page*/
 
 /*Begin filters werken*/
 
@@ -745,3 +764,4 @@ ul {
 
 
 /*Einde responsive ontwerp*/
+

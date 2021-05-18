@@ -14,6 +14,8 @@
 
     <!-- link stylesheet -->
     <link rel="stylesheet" href="../css/project.css">
+    <!-- Link Script -->
+    <script src="../script/form_validation.js"></script>
 </head>
 <body>
 <header>
@@ -49,7 +51,8 @@
 
         <section>
             <h3>Tekst</h3>
-            <p>Als u kiest voor uw sokken te personaliseren met een tekstbedrukking. De tekst wordt geplaatst vanboven aan de buitenkant van uw voeten.
+            <p>Als u kiest voor uw sokken te personaliseren met een tekstbedrukking. De tekst wordt geplaatst vanboven
+                aan de buitenkant van uw voeten.
                 U kan kiezen tussen 3 lettertypes en de kleur van de tekst is ook volledig personaliseerbaar.
                 Voor sokken met tekstbedrukking betaalt u een vaste meerprijs van &euro;5,00.</p>
 
@@ -57,15 +60,18 @@
 
         <section>
             <h3>Afbeelding</h3>
-            <p>Als u kiest om uw sokken te laten bedrukken met een afbeelding, zal de afbeelding aan de binnenkant van de voet gedrukt worden.
-                Let op: Voor sommige sokken zal dit overlappen met het eventuele patroon dat al aanwezig is. Voor sokken bedrukt met een afbeelding
+            <p>Als u kiest om uw sokken te laten bedrukken met een afbeelding, zal de afbeelding aan de binnenkant van
+                de voet gedrukt worden.
+                Let op: Voor sommige sokken zal dit overlappen met het eventuele patroon dat al aanwezig is. Voor sokken
+                bedrukt met een afbeelding
                 betaalt u een vaste meerprijs van &euro;10,00.
                 Vergeet uw afbeelding niet op te laden als u hiervoor kiest.</p>
         </section>
 
         <section>
             <h3>Combinatie</h3>
-            <p>U kan ook kiezen voor deze 2 te combineren, dan zal de tekst aan de buitenkant van de voeten gedrukt worden en de afbeelding
+            <p>U kan ook kiezen voor deze 2 te combineren, dan zal de tekst aan de buitenkant van de voeten gedrukt
+                worden en de afbeelding
                 aan de binnenkant. Voor een paar van deze sokken betaald u een vaste meerprijs van &euro;13,00</p>
         </section>
     </section>
@@ -73,19 +79,19 @@
     <section>
         <h2>Opties</h2>
 
-        <form action="personalisering_confirmation.html" method="GET" class="personaliseringsopties">
+        <form action="personalisering_confirmation.html" method="GET" class="personaliseringsopties" id="form">
             <fieldset>
                 <legend>Personaliseer hier uw sokken</legend>
                 <label for="aantalparen">*Aantal paren:</label>
-                <input type="number" name="aantalparen" id="aantalparen" min="1" max="99" value="1" required>
+                <input type="number" name="aantalparen" id="aantalparen" min="1" max="99" value="1">
                 <label for="maat">*Maat:</label>
-                <select name="schoenmaten" id="maat" required>
+                <select name="schoenmaten" id="maat">
                     <option>32 - 36</option>
                     <option>37 - 42</option>
                     <option>43 - 48</option>
                 </select>
                 <label for="typesok">*Keuze sok:</label>
-                <select name="typesok" id="typesok" required>
+                <select name="typesok" id="typesok">
                     <option>Gele korte sokken</option>
                     <option>Grijze korte sokken</option>
                     <option>Enkelsokken met kleine bolletjes</option>
@@ -116,11 +122,14 @@
                 </select>
                 <p>*Type bedrukking:</p>
                 <ul>
-                    <li><input type="radio" id="typebedrukking_1" name="typebedrukking" value="afbeelding" class="radiobutton" required>
+                    <li><input type="radio" id="typebedrukking_1" name="typebedrukking" value="afbeelding"
+                               class="radiobutton">
                         <label class="radiobutton" for="typebedrukking_1">Afbeelding</label></li>
-                    <li><input type="radio" id="typebedrukking_2" name="typebedrukking" value="tekst" class="radiobutton" required>
+                    <li><input type="radio" id="typebedrukking_2" name="typebedrukking" value="tekst"
+                               class="radiobutton">
                         <label class="radiobutton" for="typebedrukking_2">Tekstbedrukking</label></li>
-                    <li><input type="radio" id="typebedrukking_3" name="typebedrukking" value="combinatie" class="radiobutton" required>
+                    <li><input type="radio" id="typebedrukking_3" name="typebedrukking" value="combinatie"
+                               class="radiobutton">
                         <label class="radiobutton" for="typebedrukking_3">Afbeelding en tekstbedrukking</label></li>
                 </ul>
                 <label for="tekst">Tekst:</label>
@@ -140,22 +149,25 @@
             <fieldset>
                 <legend>Persoonlijke informatie</legend>
                 <label for="voornaam">*Voornaam:</label>
-                <input type="text" id="voornaam" name="voornaam" required>
+                <input type="text" id="voornaam" name="voornaam">
                 <label for="achternaam">*Achternaam:</label>
-                <input type="text" id="achternaam" name="achternaam" required>
+                <input type="text" id="achternaam" name="achternaam" placeholder="Uw achternaam" required>
+                <span id="fb_achternaam"></span>
                 <label for="email">*Email:</label>
-                <input type="email" id="email" name="email" placeholder="joske.vermeulen@domein.com" required>
+                <input type="text" id="email" name="email" placeholder="Uw e-mailadres" required>
+                <span id="fb_email"></span>
                 <label for="strnr">*Straat + huisnummer:</label>
-                <input type="text" id="strnr" name="str+nr" required>
+                <input type="text" id="strnr" name="str+nr">
                 <label for="pltspost">*Plaats + postcode:</label>
-                <input type="text" id="pltspost" name="plts+post" required>
+                <input type="text" id="pltspost" name="plts+post">
                 <label for="mening">Duid via de slider aan hoe tevreden u over ons bent. (van niet tevreden naar heel
                     tevreden)</label>
                 <input type="range" min="1" max="10" value="5" id="mening" name="rating">
                 <label class="checkboxlabel" for="termsconditions">*Ik aanvaard de algemene voorwaarden:</label>
-                <input type="checkbox" name="termsconditions" id="termsconditions" required>
+                <input type="checkbox" name="termsconditions" id="termsconditions">
             </fieldset>
-            <input class="submitform" type="submit" value="Verzenden">
+            <input id="submitform" type="submit" value="Verzenden">
+            <span id="fb_form"></span>
         </form>
 
 
