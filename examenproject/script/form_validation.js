@@ -1,6 +1,6 @@
-addEventListener('load',init);
+addEventListener('load', init);
 
-function init(){
+function init() {
     let achternaamveld = document.querySelector("#achternaam");
     let emailveld = document.querySelector("#email");
     let form = document.querySelector("#form");
@@ -14,12 +14,12 @@ function init(){
     form.addEventListener('submit', validateForm);
 }
 
-function validateAchternaam(){
+function validateAchternaam() {
 
     let input = document.querySelector("#achternaam");
     let feedback = document.querySelector("#fb_achternaam");
 
-    if (input.value.length < 5){
+    if (input.value.length < 5) {
         feedback.style.color = "red";
         feedback.innerHTML = "Je ingevoerde waarde is kleiner dan 5 tekens.";
         return false;
@@ -29,13 +29,11 @@ function validateAchternaam(){
     }
 }
 
-function validateEmail(){
-
+function validateEmail() {
 
     const regex = /(\w+\.?)+\w@((student.)?kdg\.be)$/;
     let input = document.querySelector("#email");
     let feedback = document.querySelector("#fb_email");
-
 
     if (!regex.test(input.value)) {
         feedback.style.color = "red";
@@ -47,17 +45,21 @@ function validateEmail(){
     }
 }
 
-function validateForm(event){
+function validateForm(event) {
+
+    let emailOk = validateAchternaam();
+    let nameOk = validateEmail();
 
     let feedback = document.querySelector("#fb_form");
-    if (!validateAchternaam() || !validateEmail()){
-        validateEmail();
+    if (!nameOk || !emailOk) {
         event.preventDefault();
         feedback.style.color = "red";
         feedback.innerHTML = "Niet alle velden zijn correct ingevuld.";
+
         return false;
     } else {
         feedback.innerHTML = "";
         return true;
     }
 }
+

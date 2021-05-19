@@ -99,4 +99,7 @@ M8 - 4e commit - geen aanpassingen na validatie, M8 finish (M8_v1)
 
 ## 19 Mei 2021
 M9 - 1e commit - Kleine aanpassingen css, validatie forms, bevestigingspagina gefixt (M9_v1)
-M9 - 2e commit - Kleine fix in html (required attribuut weg) en kleine fix in js -> M9 finish (M9_v2)
+M9 - 2e commit - Kleine fix in html (required attribuut weg) en kleine fix in js (M9_v2)
+
+## 20 Mei 2021
+M9 - 3e commit - Fix bij dubbelklikken validatie niet in orde -> M9 finish (M9_v3)
