@@ -51,6 +51,7 @@ function validateForm(event){
 
     let feedback = document.querySelector("#fb_form");
     if (!validateAchternaam() || !validateEmail()){
+        validateEmail();
         event.preventDefault();
         feedback.style.color = "red";
         feedback.innerHTML = "Niet alle velden zijn correct ingevuld.";
