@@ -260,6 +260,7 @@ ul {
 #producten section {
     grid-area: producten;
     padding-top: 10px;
+    padding-bottom: 5px;
     margin-top: 10px;
     background-color: #caeeca;
     border-radius: 10px;
