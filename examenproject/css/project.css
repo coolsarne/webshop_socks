@@ -257,72 +257,25 @@ ul {
     padding-bottom: 20px;
 }
 
-
-#producten {
+#producten section {
     grid-area: producten;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-    grid-template-areas:
-    "zomer winter sport";
-}
-
-#zomer {
-    grid-area: zomer;
+    padding-top: 10px;
+    margin-top: 10px;
     background-color: #caeeca;
     border-radius: 10px;
 }
 
-#zomer ul {
+#producten section ul {
     padding: 0;
     align-content: center;
 }
 
-#zomer ul li {
+#producten section ul li {
     width: 200px;
     height: 320px;
     vertical-align: top;
     padding: 0 10px;
 }
-
-#winter {
-    grid-area: winter;
-    background-color: #caeeca;
-    border-radius: 10px;
-}
-
-#winter ul {
-    padding: 0;
-    align-content: center;
-}
-
-#winter ul li {
-    width: 200px;
-    height: 320px;
-    vertical-align: top;
-    padding: 0 10px;
-
-}
-
-#sport {
-    grid-area: sport;
-    background-color: #caeeca;
-    border-radius: 10px;
-}
-
-#sport ul {
-    padding: 0;
-    align-content: center;
-}
-
-#sport ul li {
-    width: 200px;
-    height: 320px;
-    vertical-align: top;
-    padding: 0 10px;
-
-}
-
 /*einde grid productpage*/
 
 /*begin grid contact*/
@@ -633,14 +586,6 @@ ul {
     }
 
 }
-
-@media screen and (max-width: 700px){
-    #producten {
-        display: block;
-    }
-}
-
-
 /*Einde productpage*/
 
 /*contactpage*/
