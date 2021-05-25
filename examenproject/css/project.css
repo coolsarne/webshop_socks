@@ -277,6 +277,10 @@ ul {
     vertical-align: top;
     padding: 0 10px;
 }
+
+#producten_main button {
+    margin-bottom: 10px;
+}
 /*einde grid productpage*/
 
 /*begin grid contact*/

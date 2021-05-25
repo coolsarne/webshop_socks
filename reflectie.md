@@ -95,3 +95,6 @@ M9 - 3e commit - Fix bij dubbelklikken validatie niet in orde -> M9 finish (M9_v
 
 ## 24 Mei 2021
 M10 - 1e commit - Startup + voorbereiding M10
+
+## 25 Mei 2021
+M10 - 2e commit - M10 klaar, enkel kleine spacing bug in dyn pagina
