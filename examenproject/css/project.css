@@ -1,7 +1,6 @@
 /*import normalize css sheet*/
 @import "normalize.css";
 
-
 /*begin algemene grid*/
 body {
     display: grid;
@@ -269,6 +268,8 @@ ul {
 #producten section ul {
     padding: 0;
     align-content: center;
+    font-size: 0;
+    margin-bottom: 36px;
 }
 
 #producten section ul li {
@@ -276,6 +277,16 @@ ul {
     height: 320px;
     vertical-align: top;
     padding: 0 10px;
+    font-size: 1em;
+}
+
+#producten section ul li section p {
+    font-size: 16px;
+}
+
+#producten section ul li section h4 {
+    height: 36px;
+    font-size: 16px;
 }
 
 #producten_main button {

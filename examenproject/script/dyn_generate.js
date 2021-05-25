@@ -11,7 +11,6 @@ class Product {
         this.alternatieveTekst = data[4];
         this.productpagina = data[5];
         this.filterklasse = data[6];
-        this.content = document.createElement('li');
     }
 
     maakProductAan() {
@@ -43,11 +42,7 @@ class Product {
         }
 
         newLi.appendChild(newSection);
-        this.content = newLi;
-    }
-
-    getContent(){
-        return this.content;
+        return newLi;
     }
 }
 
@@ -68,7 +63,8 @@ class ProductCategorie{
         newH3.innerText = this.naam.charAt(0).toUpperCase() + this.naam.slice(1) + "sokken";
         let newUl = document.createElement('ul');
         for (let i = 0; i < this.producten.length; i++) {
-            newUl.appendChild(this.producten[i].getContent());
+            let liContent = this.producten[i].maakProductAan();
+            newUl.appendChild(liContent);
         }
         newSection.appendChild(newH3);
         newSection.appendChild(newUl);
@@ -99,7 +95,6 @@ function init() {
         for (let j = 0; j < productData.length; j++) {
             if(productData[j][0] === categorieNamen[i]){
                 let prod = new Product(productData[j]);
-                prod.maakProductAan();
                 cat.voegProductToe(prod);
             }
         }
