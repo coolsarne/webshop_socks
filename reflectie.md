@@ -99,3 +99,4 @@ M10 - 1e commit - Startup + voorbereiding M10
 ## 25 Mei 2021
 M10 - 2e commit - M10 klaar, enkel kleine spacing bug in dyn pagina
 M10 - 4e commit ongeveer - M10 finish, klaar voor validatie (M10_v1)
+D2 - 1e commit - commit Deadline 2 (niets veranderd in bestanden, puur tag deadline), pass voor alle Milestones, Joepie!
